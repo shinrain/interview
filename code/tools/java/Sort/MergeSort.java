@@ -21,6 +21,9 @@ class node{
 
 public class MergeSort{
 
+
+// This part is impl of merge sort using array
+
 	private static void subMergeArray(int[] a, int[] b, int left, int mid, int right){
 		if(left>=right || a.length<=right || left<0 || b.length < right-left+1 || mid >right || mid <left) return;
 
@@ -55,6 +58,8 @@ public class MergeSort{
 		subMergeArray(a, b, left, mid+1, right);
 	}
 
+// main function of merge sort based on array.
+
 	public static void MergeSortArray(int[] a){
 		int n = a.length;
 
@@ -63,6 +68,13 @@ public class MergeSort{
 		subSortArray(a, new int[n], 0, n-1);
 	}
 
+
+
+
+// This part is impl of merge sort using linked list
+// The whole functionality uses heavy logging mode.
+
+  // This function is used to print linked list
 
 	private static void print(node N){
 		node nd = N;
@@ -146,6 +158,8 @@ public class MergeSort{
 			a = subMergeLL(b, c);
 		}
 	}
+
+  // The is the main function of merge sort in linked list
 
 	public static void MergeSortLL(int[] a){
 		int n = a.length;
