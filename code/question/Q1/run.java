@@ -2,7 +2,6 @@ import java.util.*;
 import java.lang.Math.*;
 
 
-
 // Customized Tree for sorting ending times and count how many ending times are earlier than inserted one to compute the racer's score.
 // Insertion is O(nlgn)
 
@@ -54,8 +53,7 @@ class Tree{
 
 }
 
-
-// racer class, to store the start and ending time for each racer 
+// racer class, to store the start and ending time for each racer
 
 class racer{
 	double start;
@@ -66,7 +64,7 @@ class racer{
 		start = a; end = b;	
 	}
 
-	// This function is helper function to create racer, since if start == end is not allowed.
+        // This function is helper function to create racer, since if start == end is not allowed.
 
 	static racer genRacer(double a, double b){
 		if(a < b) return new racer(a,b);
@@ -74,15 +72,16 @@ class racer{
 		return null;
 	}
 
-	// Comparison function, used in racer array sorting function accoring to starting time
+        // Comparison function, used in racer array sorting function accoring to starting time
 
 	static boolean less(racer a, racer b){
 		return (a.start <= b.start);
 	}
-	
-	// Quick Sort for racer class, using comparison function above 
+
+        // Quick Sort for racer class, using comparison function above
 
 	static int partition(racer[]a , int left, int right){
+
                 int n = a.length;
                 if(right<left || left<0 || right>=n) return -1;
 
@@ -121,6 +120,8 @@ class racer{
                 int p = partition(a,left, right);
                 if(p==-1)       return;
 
+//              System.out.println("Partition at "+p);
+
                 subqsort(a,left,p-1);
                 subqsort(a,p+1,right);
 
@@ -133,8 +134,7 @@ class racer{
 		return arr;
 	}
 
-
-	// Print racer's time virtually
+        // Print racer's time virtually
 
 	public static void printRace(racer[] arr){
 		int tt=0;
@@ -158,8 +158,8 @@ class racer{
 // class to run this algorithm
 
 class run{
-	
-	// Generate racers with random starting and ending times
+
+        // Generate racers with random starting and ending times
 
 	static racer[] genRace(int N){
 		if(N <=0) return null;
@@ -176,23 +176,19 @@ class run{
 		return re;
 	} 
 
-
-	// Main function
+        // Main function
 
 	public static void main(String[] args){
 		int N = 20;
 		racer[] race = genRace(N);
 		race = racer.sort(race);
 	
-		for(racer i : race)		
-			//System.out.print("( "+ i.start+", "+i.end+" ),  ");
-		System.out.println();		
 
 		racer.printRace(race);
 
 		Tree T = new Tree();
-		
-		// Insert into Tree and print out score
+
+                // Insert into Tree and print out score
 
 		for(int i = N-1; i>=0; i--){
 			System.out.println("#"+i+" score is "+ T.insert((int)(race[i].end*100)));
