@@ -3,3 +3,25 @@ There are currently two branches in interview repo.
 Branch master is offical branch for this repo and workspace is used to get most recent update changes. For stable use, please join master.
 
 And no one is allowed to push directly to master except administrator(Ling Xie).
+
+
+
+	Commit Message:
+
+		"FEATURE:..." -- major change on related files
+		"MODIFY:..."  -- functional change on related files
+		"LAZY:.."     -- Minor change, eg: comments change, function name changes and etc.
+
+
+	Version Message:
+
+		"Integer version"  -- integer version number e.g 1.0 -- major stable version of the file
+		"fractional version"  -- fractional version number e.g 0.5 -- functional changes added but to be improved; Next Integer version is expected soon.
+	
+	Build and Clean tool:
+		alias build='find -name "*.java" > source.txt; cat source.txt | xargs javac; rm source.txt'
+		alias clean='find -name "*.class" > class.txt; cat class.txt | xargs rm; rm class.txt'
+
+		Note: To build all the java files under current work dir recursively, use build; to remove all the .class files under current dir recursively, run clean.
+
+		      IMPORTANT! Must run clean in buildtop before push
