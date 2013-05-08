@@ -4,7 +4,7 @@ import Sort.*;
 
 
 
-class run{
+class run_sort{
 
 
   // Print array items
