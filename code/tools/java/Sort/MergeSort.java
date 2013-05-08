@@ -86,11 +86,7 @@ public class MergeSort{
 		if(a==null && b == null) return null;
 		node N = null;
 
-		System.out.print("\nNow Merge ");
-		print(a);
-		System.out.print(" and ");
-		print(b);
-		System.out.print(" ---> ");
+	
 		node N1 = a;
 		node N2 = b;
 
@@ -106,18 +102,15 @@ public class MergeSort{
 			N = N2;
 			N.next = subMergeLL(N1, N2.next);
 		}
-		print(N);
-		System.out.println("\n\n\n");
+
 		return N;
 		
 
 	}
 	
-	private static void subSortLL(node a){
-		if(a == null) return;
-		System.out.print("\n******Now sort ");
-		print(a);
-		System.out.println();
+	private static node subSortLL(node a){
+		if(a == null) return null;
+
 		node N = a;
 
 		boolean flg = true;
@@ -143,19 +136,11 @@ public class MergeSort{
 			N = nd;			
 
 		}
-		System.out.print("****************Linked List: ");
-		System.out.print(" divided ---> ");
-		print(b);
-		System.out.print(" and ");
-		print(c);
-		System.out.println();
-		if(b == null) a = c;
-		else if(c == null) a = b;
+		
+		if(b == null) return c;
+		else if(c == null) return b;
 		else{
-			subSortLL(b);
-			subSortLL(c);
-
-			a = subMergeLL(b, c);
+			return subMergeLL(subSortLL(b), subSortLL(c));
 		}
 	}
 
@@ -178,7 +163,7 @@ public class MergeSort{
 		while(nd!=null){System.out.print(nd.val+" ");nd = nd.next;}
 		System.out.println();		
 	
-		subSortLL(N);
+		N = subSortLL(N);
 
 		for(int i=0; N!=null; i++, N = N.next)
 			a[i] = N.val;
