@@ -1,0 +1,17 @@
+1. if we sort racers according to their starting time, the last one's score (# N-1) must be 0, since there is no one start later than him.
+2. For # N-2, we need to check whether he finished after #N-1, if yes, score is 1, if not, score is 0;
+...
+3. For # k, we need to check the position of his finishing time is in the sequence we have faced. Let's say, T_end(K) has i's ending time less than it. The score will be i.
+
+To realize the algorithm, you need to sort the cell of (start, end) according to (start), which is O(nlgn). 
+
+But compute the score is not easy, since there is not dynamic sorting data structure which could keep add new item and keep the structure in O(nlgn) time:
+
+a. if you use array, searching is lgn, but insert is n, which means the whole alg will be O(n^2)
+b, if you use linked list, insert is const, but searching is n.
+
+
+To get the score, a modified BST could be used here:
+1. add a new filed here is the # of node to the left of current node. ( left_num )
+2. When you add a node, if new < current, current.left_num+1; else the final position of new: final_pos += current.left_num+1;
+3. If reach null, create a new node, append and output the score: final_pos.
