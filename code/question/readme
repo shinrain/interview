@@ -2,4 +2,4 @@
 
 score ＝ 所有出发比自己晚但是到达比自己早的racer数量之和，（所有的出发时间 和到达时间没有重复的）要求时间复杂度o(nlgn).
 
-
+2. Determine whether an integer is a palindrome. Do this without extra space. O(1) is OK
