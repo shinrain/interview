@@ -7,19 +7,18 @@ class run{
 
 	static int N = 10;
 	
-	static boolean check(int i, int j){
-		if(i<0 || i>9 || j<0 || j>9 || b[i][j] == 0) return false;
-		return true;
+
+	static void propagate(int[][] a, int i, int j){
+		if(i<0 || i>9 || j<0 || j>9 || a[i][j] == 0) return;
+		if(b[i][j] == 1) return;
+		b[i][j] = 1;
+		propagate(a,i-1,j);
+		propagate(a,i+1,j);
+		propagate(a,i,j-1);
+		propagate(a,i,j+1);
+		return;
 	}
 	
-	static boolean checkSurround(int i, int j){
-			if(b[i][j]!=2) return b[i][j]==1;
-			else{
-				if(!check(i-1,j) && !check(i+1,j) && !check(i,j-1) && !check(i,j+1)) return false;
-				return true;
-			}
-
-	}
 
 	static void Capture(int[][] a){
 		if(a == null) return ;
@@ -29,17 +28,43 @@ class run{
 			for(j=0;j>N;j++)
 				b[i][j] =2;
 
-		for( i=0,j=0; i<N; i++)	b[i][j] = a[i][j];
-		for( i=0,  j =0; j<N; j++) b[i][j] = a[i][j];
-		for( i=N-1,  j =0; j<N; j++) b[i][j] = a[i][j];
-		for( i=0,  j = N-1; i<N; i++) b[i][j] = a[i][j];
-
-		for( i =1; i<N-1; i++)
-			for( j =1; j<N-1; j++)
-				if(a[i][j] == 1 && check(i,j))
-					b[i][j] = 1;
-				else 
-					b[i][j] = 0;
+		for( i=0,j=0; i<N; i++){
+			b[i][j] = a[i][j];
+			if(b[i][j] == 1){
+				propagate(a,i-1,j);
+				propagate(a,i+1,j);
+				propagate(a,i,j-1);
+				propagate(a,i,j+1);
+			}
+		}
+		for( i=0, j =0; j<N; j++) {
+			b[i][j] = a[i][j];
+			if(b[i][j] == 1){
+				propagate(a,i-1,j);
+				propagate(a,i+1,j);
+				propagate(a,i,j-1);
+				propagate(a,i,j+1);
+			}
+		}
+		for( i=N-1,  j =0; j<N; j++){
+			b[i][j] = a[i][j];
+			if(b[i][j] == 1){
+				propagate(a,i-1,j);
+				propagate(a,i+1,j);
+				propagate(a,i,j-1);
+				propagate(a,i,j+1);
+			}
+		}
+		for( i=0,  j = N-1; i<N; i++){
+			 b[i][j] = a[i][j];
+			if(b[i][j] == 1){
+				propagate(a,i-1,j);
+				propagate(a,i+1,j);
+				propagate(a,i,j-1);
+				propagate(a,i,j+1);
+			}
+		}
+		
 		return;
 	}
 
@@ -51,8 +76,12 @@ class run{
 				
 		System.out.println("The input Matrix is:");
 		for(int i =0; i<N; i++){
-			for(int j=0; j<N; j++)
-				System.out.print(a[i][j]+", "); 
+			for(int j=0; j<N; j++){
+				char f;
+				if(a[i][j] ==0 ) f ='x';
+				else f = 'o';
+				System.out.print(f+" "); 
+			}
 			System.out.println();
 		}
 
@@ -60,8 +89,12 @@ class run{
 		Capture(a);
 		System.out.println("The output Matrix is:");
 		for(int i =0; i<N; i++){
-			for(int j=0; j<N; j++)
-				System.out.print(b[i][j]+", "); 
+			for(int j=0; j<N; j++){
+				char f;
+				if(b[i][j] ==0 ) f ='x';
+				else f = 'o';
+				System.out.print(f+" "); 
+			}
 			System.out.println();
 		}
 	}

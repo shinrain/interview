@@ -8,3 +8,5 @@ score ＝ 所有出发比自己晚但是到达比自己早的racer数量之和�
 
 4. Given a string s, partition s such that every substring of the partition is a palindrome.
 
+5.Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
+
