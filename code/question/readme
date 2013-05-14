@@ -12,3 +12,4 @@ score ＝ 所有出发比自己晚但是到达比自己早的racer数量之和�
 
 6. Find the total sum of all root-to-leaf numbers.
 
+7. Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
