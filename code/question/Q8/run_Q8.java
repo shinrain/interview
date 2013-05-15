@@ -19,29 +19,35 @@ class run{
 	static void findTransform(char[] m, char[] n){
 
 		Queue<char[]> Q = new Queue<char[]>();
-
+		Hashset<char[]> map = new Hashset<char[]>();
 		Q.push(m);
 
 		// Define one more field: pre which is the pre word for current words.
 		m.pre = null;
-
+		boolean found = false;
 		char[] word = null;
 		while(!Q.isEmpty()){
 			word = Q.pop();
-			if(word == n) break;
+			if(word == n) { found = true; break;}
+			map.add(word);
 			char[] tmp = word;		
 			for(int i = 0; i<N; i++){
 				for(int j =0; j<26;j++){
 					if(tmp[i] == letter[j]) continue;
 
 					tmp[i] = letter[j];
-					if(validateWord(tmp)){
+					if(validateWord(tmp) && !map.hasKey(tmp)){
 
 						tmp.pre = word;
 						Q.push(tmp);
 					}
 				}
 			}
+		}
+
+		if(!found){
+			System.out.println("No routine");
+			return;
 		}
 
 		if(word == null) return;
