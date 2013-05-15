@@ -22,13 +22,24 @@ class run{
 		Hashset<char[]> map = new Hashset<char[]>();
 		Q.push(m);
 
+		int count = 1; 		// use to identify if the current layer is done.
+
+		ArrayList<char[]> re = new ArrayList<char[]>();
+
 		// Define one more field: pre which is the pre word for current words.
 		m.pre = null;
 		boolean found = false;
 		char[] word = null;
 		while(!Q.isEmpty()){
+			if(count == 0 && !found) count = Q.size();
 			word = Q.pop();
-			if(word == n) { found = true; break;}
+			count --;
+			if(word == n) { 
+				found = true; 
+				re.add(word); 
+				if(count >0)	continue;
+				else break;
+			}
 			map.add(word);
 			char[] tmp = word;		
 			for(int i = 0; i<N; i++){
@@ -49,11 +60,9 @@ class run{
 			System.out.println("No routine");
 			return;
 		}
-
-		if(word == null) return;
-		
-		printSequence(word);
-
+		for(word : re)
+			if(word == null) return;
+			else	printSequence(word);
 	}
 
 	static void printSequence(char[] word){
