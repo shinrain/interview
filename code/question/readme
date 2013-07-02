@@ -28,3 +28,19 @@ score ＝ 所有出发比自己晚但是到达比自己早的racer数量之和�
 14. Jump game.
 
 15. N queens
+
+17. Search in rotated sorted array
+
+18. divide int without * or / in log(n)
+
+19. Given n, print all result of "()()()"
+
+20, Print string from phone pad
+
+21. find the kth number from two sorted array
+
+22. KMP String matching algorithm
+
+23. Remove 'x', double 'z', assume # of x >= z
+
+24. Given a string.Find the longest substring in it such that the substring contains only 2 unique characters.Ex- aabbcbbbadef Ans-bbcbbb
