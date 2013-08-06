@@ -1,0 +1,11 @@
+test2.o: test2.cpp                                                                                          
+        g++ -c -Wall -Wextra -I. test2.cpp                                                                 
+                                                                                                          
+                                                                                                          
+Logging.o: Logging.h Logging.cpp                                                                                         
+        g++ -c -Wall -Wextra -I.  ../Logging.cpp                                                                  
+                                                                                                          
+                                                                                                          
+test: test2.o Logging.o                                                                                       
+        g++ -o test test2.o ../Looging.o                                                                          
+                                 
