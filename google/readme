@@ -1,2 +1,68 @@
 This folder contains google questions collected
 
+Evaluate modified RPN
+---------------------
+Expression can be a single integer or surrounded by ( and ).   
+Operands can be + or *.
+
+Example:
+
++ ( * 1 ( + 1 2 3 ) ) => 6
++ ( * ( + 1 1 ) 17 ) => 34
++ 7 => 7
++ ( * 17 ( + 1 1 ) ) => 34
+
+[Party at Hali-Bula](http://poj.org/problem?id=3342)
+----------------------------------------------------
+Suppose we are planning a company party. The company organizational structure is so that there is a single Owner who runs the place. Everyone has one direct manager, but a manager may have any number of direct reports.  Everyone must report to the big boss, possibly indirectly.  
+Each employee has associated with him/her a non-negative “fun” value.  What we want to do is invite the set of employees to make the party __as fun as possible__.  
+
+Here is the only constraint:  If you invite an employee, you cannot invite that employee’s direct manager.  
+```
+            A
+     B              C
+  I    J        D       E
+         F     G H
+```
+If we include A:  total fun value should Fun(A)=sum_{i=I,J,D,E}(Fun(i))  
+no A:      Fun(A)={Fun(B)+Fun(C)}  
+It’s legal to invite B and C  
+Or it’s legal to invite D, E, A, but you cannot invite D and C, or B and A.  
+
+Boxes
+-----
+有若干个盒子，每个盒子有length和width，不考虑高度。只要尺寸fit，大盒子就可以放小盒子，但是一层只能套一个，即便还有空余；但可以多层嵌套。  
+求最小的面积放所有的盒子  
+比如 ``7*7`` , ``5*5``, ``4*6``, ``3*3``, 答案是 ``7*7 + 4*6``.
+
+Consecutive linked list?
+------------------------
+Given a single list A->B->C->E….->Z  with  with node type:
+```
+Node {
+  T value;
+  Node* next;
+}
+```
+Find how many clusters in the array. The cluster means all the Node in the cluster is consecutive in the list.
+for instance
+```
+result:   D E F J G H C
+cluster 1 c d e f g h
+cluster 2 j
+```
+
+Max area
+--------
+n x n parcels in city; matrix M contains the cost of each parcel; budget B
+find largest rectangular area in the city you can afford.
+
+Social network?
+---------------
+在social network中，如何推荐陌生人中和自己共同好友最多的人。
+
+Queue array?
+------------
+a) you have a Queue array, Queue<Integer>[] queues，get the shortest length queue,返回的是queue的index。pop is expensive.这个queue是动态更新的，肯定不能直接size();  
+
+b) find the queue with min sum queue, all with non-negative numbers. 
