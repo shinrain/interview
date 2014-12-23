@@ -3,6 +3,7 @@ This folder contains uber interview questions collected
 http://www.meetqun.com/thread-3033-1-4.html
 -------------------------------------------
 Round2: 经典的uber题， design一个excel
+
 Round3: 题目和bitly.com挺像的，做一个long 字符串hash到一个short 字符串，也很简单，说白了就是用两个hashtable，一个key-val是short-long strings， 一个是long-short strings
 
 http://www.meetqun.com/thread-2789-1-15.html
@@ -17,35 +18,55 @@ http://www.meetqun.com/thread-2789-1-15.html
 http://www.meetqun.com/thread-2596-1-5.html
 ----------------------------------------------
 coding: 
+```
 input: log file, <user name, login time, logout time>
 output: <time,number of users>
+```
 假定同一个user的login time, logout time 没有overlap
+```
 <"user a", 5,10>
 <"user b", 6,8>
 <"user c", 10,11>
+```
 output:
-<5,1> <6,2> <8,1> <10,1> <11,0>
+```<5,1> <6,2> <8,1> <10,1> <11,0>```
 
 http://www.meetqun.com/thread-2840-1-10.html
 --------------------------------------------
-我的电面是一道brain teaser。。100个locker一开始都是锁着的，第一次reverse 1， 2， 3， 4。。。； 第二次reverse2， 4， 6， 8。。。。；第三次reverse 3， 6， 9 。。。以此类推，一直到100次，有哪几个是left open. reverse是指open的就关掉，close的就打开(toggle)
+我的电面是一道brain teaser。。
+
+100个locker一开始都是锁着的，
+
+第一次reverse 1， 2， 3， 4。。。； 
+第二次reverse2， 4， 6， 8。。。。；
+第三次reverse 3， 6， 9 。。。
+
+以此类推，一直到100次，有哪几个是left open. reverse是指open的就关掉，close的就打开(toggle)
 
 http://www.meetqun.com/thread-2520-1-18.html
 ---------------------------------------------
 一道系统设计题，设计一个Service可以输入用户location查询附近的公交站台和所有即将到这些站台的公交车。我随便和他扯了一些系统设计的还有优化算法之类的东西，后来让我写一个控制访问API频率（Ratelimit）的function， 用了一个Queue写完就结束了。
+
 第一个人 ： 让我设计一个 Netflix， follow up 很多 比如如何限制同一个用户多处登录不能同时看一个资源，如何实现根据用户的网速调整清晰度，怎么热门推荐等等。
-第二个人 ： 进来直接不闲聊直接让我打开自己电脑开始写一些代码，设计一个 Excel ， 每个cell里面是一个String。 一开始想当然说可以直接用二维矩阵存，后来改成list of lists， 最后改成了HashMap。后续还有evaluate一个string相关的问题（给了黑盒evaluate函数，对每个cell实现evaluate和支持修改）
+
+第二个人 ： 进来直接不闲聊直接让我打开自己电脑开始写一些代码，设计一个 Excel ， 每个cell里面是一个String。 
+
+一开始想当然说可以直接用二维矩阵存，后来改成list of lists， 最后改成了HashMap。后续还有evaluate一个string相关的问题（给了黑盒evaluate函数，对每个cell实现evaluate和支持修改）
+
 第三个人 ： 纯聊简历，干聊project，面试官没有准备一道题，到最后我就已经是在找话说了
+
 第四个人 ： 好像是个小领导，先问了问我有没有问题，后来问了一些知识点问题，python有哪些语言特性等等之类的。
 
 http://www.meetqun.com/thread-1913-1-27.html
 --------------------------------------------
 聊简历 5min。
 两道LeetCode原题。
+
 1. Best Time to Buy and Sell Stock 
 2. Binary Tree Level Order Traversal
 
-http://www.meetqun.com/thread-2077-1-34.html                      
+http://www.meetqun.com/thread-2077-1-34.html
+--------------------------------------------
 SQL TEST:
 Assume a PostgreSQL database, server timezone is UTC. 
 ```
@@ -81,9 +102,15 @@ creationtime				timestamp with time zone
 http://www.meetqun.com/thread-1047-1-23.html
 --------------------------------------------
 We would like build a location search service that predicts where a client should be picked up and and dropped off. This feature will be used as a means of providing suggested pickup and dropoff locations when a user opens the Uber app.
+
 This service will have access to a client’s trip history (below you’ll find a week’s worth of trip data for a frequent Uber rider). The only signals you’ll have are the user’s request location location and the current date time. Please build a service using Python and Flask that does the following:
 
-This service should support queries to this endpoint: /predict?request_lat=XXX&request_lng=YYY
+This service should support queries to this endpoint: 
+
+```
+/predict?request_lat=XXX&request_lng=YYY
+```
+
 The response should should appear as:
 ```
 {
@@ -99,10 +126,12 @@ The response should should appear as:
 ```
 Approximate Time to Spend: 2 - 3 hours.
 Please provide a detailed written response to the following questions:
+
 1. What type of data pipeline would you set up to have this in production? Would this be an offline or online model? Should this be a real time service?
 2. If the amount of data generated increases by 10x every month, what architectural changes will this service need.
 3. What other features would you add if you had more time?
 4. What other kind of data would you collect to make this feature more awesome? How feasible is it to collect this kind of data?
+
 ```
 SAMPLE TRIP DATA - COMMA DELIMITED
 user_id,pickup_lat,pickup_lng,dropoff_lat,dropoff_lng,date
@@ -117,15 +146,17 @@ user_id,pickup_lat,pickup_lng,dropoff_lat,dropoff_lng,date
 http://baozitraining.org/blog/2014-star-startup-interview-uber/
 -----------------------------------------------------------------
 Coding + OO design (Design windows excel)
+
 In excel, one cell can refer to other cells, if I update one cell, how do you update all the dependent cells
 
 http://www.glassdoor.com/Interview/No-difficult-question-All-the-questions-were-open-ended-like-how-would-you-design-netflix-online-spreadsheet-tell-me-about-QTN_778648.htm
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-how would you design netflix,online spreadsheet
+how would you design netflix; online spreadsheet
 
 http://www.glassdoor.com/Interview/Given-a-regular-expression-pattern-and-a-string-check-to-see-if-pattern-matches-the-string-QTN_726967.htm
 --------------------------------------------------------------------------------------------------------------------------------------------
 Implement LRU cache with get and set operations in constant time O(1).
+
 Given a regular expression pattern and a string, check to see if pattern matches the string.
 
 http://www.glassdoor.com/Interview/Design-a-distributed-system-for-sorting-of-large-files-QTN_789026.htm
@@ -140,20 +171,32 @@ http://www.glassdoor.com/Interview/Please-find-our-standard-web-test-below-Code-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 (6-8 hours code test)
 Code Test! Bam!
+
 Uber clients are able to store favorite locations for easy pickup requests. Create a backend and a frontend for managing favorite locations.
+
 This is a simple exercise, but organize, design and test your code as if it were going into production.
+
 When you’re done, host it somewhere and provide us with a URL and a tarball or Git repo with the code.
+
 Backend
+
 Using the language (Python preferred), libraries and data store of your choosing, create a JSON in/out RESTful API for managing favorite locations. Stay away from Django or Rails, but microframeworks like Flask (preferred), Sinatra or Express are fine.
+
 Attributes of a favorite location object include: id, lat, lng, address (e.g. 800 Market Street, San Francisco, CA 94114), name (e.g. Work)
+
 Frontend
+
 Using JavaScript, Backbone.js and any other libraries of your choosing, create an interface to access the API. User should be able to:
-Create a new location
-Read/view a location, and a collection of all locations
-Update an existing location
-Delete a location
+
+1. Create a new location
+2. Read/view a location, and a collection of all locations
+3. Update an existing location
+4. Delete a location
+
 The UX is up to you, with a couple of constraints:
-Incorporate a map
-Geocode the address so the user is not required to enter lat/lng
+
+1. Incorporate a map
+2. Geocode the address so the user is not required to enter lat/lng
 Extras
+
 If you like, get creative and do whatever else you like on the backend and/or frontend to show off.  
