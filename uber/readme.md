@@ -2,18 +2,18 @@ This folder contains uber interview questions collected
 
 http://www.meetqun.com/thread-3033-1-4.html
 -------------------------------------------
-Round2: ¾­µäµÄuberÌâ£¬ designÒ»¸öexcel
+Round2: ç»å…¸çš„uberé¢˜ï¼Œ designä¸€ä¸ªexcel
 
-Round3: ÌâÄ¿ºÍbitly.comÍ¦ÏñµÄ£¬×öÒ»¸ölong ×Ö·û´®hashµ½Ò»¸öshort ×Ö·û´®£¬Ò²ºÜ¼òµ¥£¬Ëµ°×ÁË¾ÍÊÇÓÃÁ½¸öhashtable£¬Ò»¸ökey-valÊÇshort-long strings£¬ Ò»¸öÊÇlong-short strings
+Round3: é¢˜ç›®å’Œbitly.comæŒºåƒçš„ï¼Œåšä¸€ä¸ªlong å­—ç¬¦ä¸²hashåˆ°ä¸€ä¸ªshort å­—ç¬¦ä¸²ï¼Œä¹Ÿå¾ˆç®€å•ï¼Œè¯´ç™½äº†å°±æ˜¯ç”¨ä¸¤ä¸ªhashtableï¼Œä¸€ä¸ªkey-valæ˜¯short-long stringsï¼Œ ä¸€ä¸ªæ˜¯long-short strings
 
 http://www.meetqun.com/thread-2789-1-15.html
 ---------------------------------------------
-·Ç³£¼òµ¥Ö±½ÓµÄÎÊÌâ ´òÓ¡inputÀïÃæµÄ´Ê+ÆµÂÊ£¬ map¾ÍĞĞ
+éå¸¸ç®€å•ç›´æ¥çš„é—®é¢˜ æ‰“å°inputé‡Œé¢çš„è¯+é¢‘ç‡ï¼Œ mapå°±è¡Œ
 
 http://www.meetqun.com/thread-2789-1-15.html
 ----------------------------------------------
-1. ¸ø³öÒ»¸öÕûÊı£¬ÕÒ³öËüµÄ±ÈËü´óµÄÏÂÒ»¸öÖÊÊı
-2. median of two sorted array
+ç»™å‡ºä¸€ä¸ªæ•´æ•°ï¼Œæ‰¾å‡ºå®ƒçš„æ¯”å®ƒå¤§çš„ä¸‹ä¸€ä¸ªè´¨æ•°
+median of two sorted array
 
 http://www.meetqun.com/thread-2596-1-5.html
 ----------------------------------------------
@@ -22,8 +22,7 @@ coding:
 input: log file, <user name, login time, logout time>
 output: <time,number of users>
 ```
-¼Ù¶¨Í¬Ò»¸öuserµÄlogin time, logout time Ã»ÓĞoverlap
-```
+å‡å®šåŒä¸€ä¸ªuserçš„login time, logout time æ²¡æœ‰overlap```
 <"user a", 5,10>
 <"user b", 6,8>
 <"user c", 10,11>
@@ -33,35 +32,31 @@ output:
 
 http://www.meetqun.com/thread-2840-1-10.html
 --------------------------------------------
-ÎÒµÄµçÃæÊÇÒ»µÀbrain teaser¡£¡£
+æˆ‘çš„ç”µé¢æ˜¯ä¸€é“brain teaserã€‚ã€‚
 
-100¸ölockerÒ»¿ªÊ¼¶¼ÊÇËø×ÅµÄ£¬
+100ä¸ªlockerä¸€å¼€å§‹éƒ½æ˜¯é”ç€çš„ï¼Œ
 
-µÚÒ»´Îreverse 1£¬ 2£¬ 3£¬ 4¡£¡£¡££» 
-µÚ¶ş´Îreverse2£¬ 4£¬ 6£¬ 8¡£¡£¡£¡££»
-µÚÈı´Îreverse 3£¬ 6£¬ 9 ¡£¡£¡£
+ç¬¬ä¸€æ¬¡reverse 1ï¼Œ 2ï¼Œ 3ï¼Œ 4ã€‚ã€‚ã€‚ï¼› ç¬¬äºŒæ¬¡reverse2ï¼Œ 4ï¼Œ 6ï¼Œ 8ã€‚ã€‚ã€‚ã€‚ï¼› ç¬¬ä¸‰æ¬¡reverse 3ï¼Œ 6ï¼Œ 9 ã€‚ã€‚ã€‚
 
-ÒÔ´ËÀàÍÆ£¬Ò»Ö±µ½100´Î£¬ÓĞÄÄ¼¸¸öÊÇleft open. reverseÊÇÖ¸openµÄ¾Í¹Øµô£¬closeµÄ¾Í´ò¿ª(toggle)
+ä»¥æ­¤ç±»æ¨ï¼Œä¸€ç›´åˆ°100æ¬¡ï¼Œæœ‰å“ªå‡ ä¸ªæ˜¯left open. reverseæ˜¯æŒ‡opençš„å°±å…³æ‰ï¼Œcloseçš„å°±æ‰“å¼€(toggle)
+
 
 http://www.meetqun.com/thread-2520-1-18.html
 ---------------------------------------------
-Ò»µÀÏµÍ³Éè¼ÆÌâ£¬Éè¼ÆÒ»¸öService¿ÉÒÔÊäÈëÓÃ»§location²éÑ¯¸½½üµÄ¹«½»Õ¾Ì¨ºÍËùÓĞ¼´½«µ½ÕâĞ©Õ¾Ì¨µÄ¹«½»³µ¡£ÎÒËæ±ãºÍËû³¶ÁËÒ»Ğ©ÏµÍ³Éè¼ÆµÄ»¹ÓĞÓÅ»¯Ëã·¨Ö®ÀàµÄ¶«Î÷£¬ºóÀ´ÈÃÎÒĞ´Ò»¸ö¿ØÖÆ·ÃÎÊAPIÆµÂÊ£¨Ratelimit£©µÄfunction£¬ ÓÃÁËÒ»¸öQueueĞ´Íê¾Í½áÊøÁË¡£
+ä¸€é“ç³»ç»Ÿè®¾è®¡é¢˜ï¼Œè®¾è®¡ä¸€ä¸ªServiceå¯ä»¥è¾“å…¥ç”¨æˆ·locationæŸ¥è¯¢é™„è¿‘çš„å…¬äº¤ç«™å°å’Œæ‰€æœ‰å³å°†åˆ°è¿™äº›ç«™å°çš„å…¬äº¤è½¦ã€‚æˆ‘éšä¾¿å’Œä»–æ‰¯äº†ä¸€äº›ç³»ç»Ÿè®¾è®¡çš„è¿˜æœ‰ä¼˜åŒ–ç®—æ³•ä¹‹ç±»çš„ä¸œè¥¿ï¼Œåæ¥è®©æˆ‘å†™ä¸€ä¸ªæ§åˆ¶è®¿é—®APIé¢‘ç‡ï¼ˆRatelimitï¼‰çš„functionï¼Œ ç”¨äº†ä¸€ä¸ªQueueå†™å®Œå°±ç»“æŸäº†ã€‚
 
-µÚÒ»¸öÈË £º ÈÃÎÒÉè¼ÆÒ»¸ö Netflix£¬ follow up ºÜ¶à ±ÈÈçÈçºÎÏŞÖÆÍ¬Ò»¸öÓÃ»§¶à´¦µÇÂ¼²»ÄÜÍ¬Ê±¿´Ò»¸ö×ÊÔ´£¬ÈçºÎÊµÏÖ¸ù¾İÓÃ»§µÄÍøËÙµ÷ÕûÇåÎú¶È£¬ÔõÃ´ÈÈÃÅÍÆ¼öµÈµÈ¡£
+ç¬¬ä¸€ä¸ªäºº ï¼š è®©æˆ‘è®¾è®¡ä¸€ä¸ª Netflixï¼Œ follow up å¾ˆå¤š æ¯”å¦‚å¦‚ä½•é™åˆ¶åŒä¸€ä¸ªç”¨æˆ·å¤šå¤„ç™»å½•ä¸èƒ½åŒæ—¶çœ‹ä¸€ä¸ªèµ„æºï¼Œå¦‚ä½•å®ç°æ ¹æ®ç”¨æˆ·çš„ç½‘é€Ÿè°ƒæ•´æ¸…æ™°åº¦ï¼Œæ€ä¹ˆçƒ­é—¨æ¨èç­‰ç­‰ã€‚
 
-µÚ¶ş¸öÈË £º ½øÀ´Ö±½Ó²»ÏĞÁÄÖ±½ÓÈÃÎÒ´ò¿ª×Ô¼ºµçÄÔ¿ªÊ¼Ğ´Ò»Ğ©´úÂë£¬Éè¼ÆÒ»¸ö Excel £¬ Ã¿¸öcellÀïÃæÊÇÒ»¸öString¡£ 
+ç¬¬äºŒä¸ªäºº ï¼š è¿›æ¥ç›´æ¥ä¸é—²èŠç›´æ¥è®©æˆ‘æ‰“å¼€è‡ªå·±ç”µè„‘å¼€å§‹å†™ä¸€äº›ä»£ç ï¼Œè®¾è®¡ä¸€ä¸ª Excel ï¼Œ æ¯ä¸ªcellé‡Œé¢æ˜¯ä¸€ä¸ªStringã€‚
 
-Ò»¿ªÊ¼Ïëµ±È»Ëµ¿ÉÒÔÖ±½ÓÓÃ¶şÎ¬¾ØÕó´æ£¬ºóÀ´¸Ä³Élist of lists£¬ ×îºó¸Ä³ÉÁËHashMap¡£ºóĞø»¹ÓĞevaluateÒ»¸östringÏà¹ØµÄÎÊÌâ£¨¸øÁËºÚºĞevaluateº¯Êı£¬¶ÔÃ¿¸öcellÊµÏÖevaluateºÍÖ§³ÖĞŞ¸Ä£©
+ä¸€å¼€å§‹æƒ³å½“ç„¶è¯´å¯ä»¥ç›´æ¥ç”¨äºŒç»´çŸ©é˜µå­˜ï¼Œåæ¥æ”¹æˆlist of listsï¼Œ æœ€åæ”¹æˆäº†HashMapã€‚åç»­è¿˜æœ‰evaluateä¸€ä¸ªstringç›¸å…³çš„é—®é¢˜ï¼ˆç»™äº†é»‘ç›’evaluateå‡½æ•°ï¼Œå¯¹æ¯ä¸ªcellå®ç°evaluateå’Œæ”¯æŒä¿®æ”¹ï¼‰
 
-µÚÈı¸öÈË £º ´¿ÁÄ¼òÀú£¬¸ÉÁÄproject£¬ÃæÊÔ¹ÙÃ»ÓĞ×¼±¸Ò»µÀÌâ£¬µ½×îºóÎÒ¾ÍÒÑ¾­ÊÇÔÚÕÒ»°ËµÁË
+ç¬¬ä¸‰ä¸ªäºº ï¼š çº¯èŠç®€å†ï¼Œå¹²èŠprojectï¼Œé¢è¯•å®˜æ²¡æœ‰å‡†å¤‡ä¸€é“é¢˜ï¼Œåˆ°æœ€åæˆ‘å°±å·²ç»æ˜¯åœ¨æ‰¾è¯è¯´äº†
 
-µÚËÄ¸öÈË £º ºÃÏñÊÇ¸öĞ¡Áìµ¼£¬ÏÈÎÊÁËÎÊÎÒÓĞÃ»ÓĞÎÊÌâ£¬ºóÀ´ÎÊÁËÒ»Ğ©ÖªÊ¶µãÎÊÌâ£¬pythonÓĞÄÄĞ©ÓïÑÔÌØĞÔµÈµÈÖ®ÀàµÄ¡£
-
+ç¬¬å››ä¸ªäºº ï¼š å¥½åƒæ˜¯ä¸ªå°é¢†å¯¼ï¼Œå…ˆé—®äº†é—®æˆ‘æœ‰æ²¡æœ‰é—®é¢˜ï¼Œåæ¥é—®äº†ä¸€äº›çŸ¥è¯†ç‚¹é—®é¢˜ï¼Œpythonæœ‰å“ªäº›è¯­è¨€ç‰¹æ€§ç­‰ç­‰ä¹‹ç±»çš„ã€‚
 http://www.meetqun.com/thread-1913-1-27.html
 --------------------------------------------
-ÁÄ¼òÀú 5min¡£
-Á½µÀLeetCodeÔ­Ìâ¡£
-
+èŠç®€å† 5minã€‚ ä¸¤é“LeetCodeåŸé¢˜ã€‚
 1. Best Time to Buy and Sell Stock 
 2. Binary Tree Level Order Traversal
 
@@ -78,8 +73,8 @@ driver_id					integer (Foreign keyed to users.usersid)
 city_id						integer
 client_rating				integer
 driver_rating				integer
-request_device				Enum(¡®android¡¯, ¡®iphone¡¯, ¡®sms¡¯, ¡®mobile_web¡¯)
-status						Enum(¡®completed¡¯, ¡®cancelled_by_driver¡¯, ¡®cancelled_by_client¡¯)
+request_device				Enum(Â¡Â®androidÂ¡Â¯, Â¡Â®iphoneÂ¡Â¯, Â¡Â®smsÂ¡Â¯, Â¡Â®mobile_webÂ¡Â¯)
+status						Enum(Â¡Â®completedÂ¡Â¯, Â¡Â®cancelled_by_driverÂ¡Â¯, Â¡Â®cancelled_by_clientÂ¡Â¯)
 predicted_eta				integer
 actual_eta					integer
 request_at					timestamp with timezone
@@ -92,7 +87,7 @@ email						character varying
 firstname					character varying
 lastname					character varying
 banned						Boolean
-role						Enum(¡®client¡¯, ¡®driver¡¯, ¡®partner¡¯)
+role						Enum(Â¡Â®clientÂ¡Â¯, Â¡Â®driverÂ¡Â¯, Â¡Â®partnerÂ¡Â¯)
 creationtime				timestamp with time zone
 ```
 1. For request times between 12/1/2013 10:00:00 PST & 12/8/2013 17:00:00 PST, how many completed trips (Hint: look at the trips.status column) were requested on iphones in City #5? on android phones?
@@ -103,7 +98,7 @@ http://www.meetqun.com/thread-1047-1-23.html
 --------------------------------------------
 We would like build a location search service that predicts where a client should be picked up and and dropped off. This feature will be used as a means of providing suggested pickup and dropoff locations when a user opens the Uber app.
 
-This service will have access to a client¡¯s trip history (below you¡¯ll find a week¡¯s worth of trip data for a frequent Uber rider). The only signals you¡¯ll have are the user¡¯s request location location and the current date time. Please build a service using Python and Flask that does the following:
+This service will have access to a clientÂ¡Â¯s trip history (below youÂ¡Â¯ll find a weekÂ¡Â¯s worth of trip data for a frequent Uber rider). The only signals youÂ¡Â¯ll have are the userÂ¡Â¯s request location location and the current date time. Please build a service using Python and Flask that does the following:
 
 This service should support queries to this endpoint: 
 
@@ -176,7 +171,7 @@ Uber clients are able to store favorite locations for easy pickup requests. Crea
 
 This is a simple exercise, but organize, design and test your code as if it were going into production.
 
-When you¡¯re done, host it somewhere and provide us with a URL and a tarball or Git repo with the code.
+When youÂ¡Â¯re done, host it somewhere and provide us with a URL and a tarball or Git repo with the code.
 
 Backend
 
